@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Add Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div  class="bg-white shadow-2xl rounded-xl w-full max-w-md p-8 space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 text-center">
+        Add New Entry
+      </h2>
+
+      <!-- Replacing the <form> -->
+      <div id="adminForm" class="space-y-5">
+        <!-- Name -->
+        <div>
+          <label for="url" class="block text-sm font-medium text-gray-700 mb-1"
+            >Enter Imgage URL</label
+          >
+          <input
+            type="text"
+            id="url"
+            placeholder="Enter URL"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+        <!-- ___________ -->
+
+        <!-- Breed -->
+        <div>
+          <label
+            for="breed"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Breed</label
+          >
+          <input
+            type="text"
+            id="breed"
+            placeholder="Enter breed"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Category -->
+        <div>
+          <label
+            for="category"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Category</label
+          >
+          <input
+            type="text"
+            id="category"
+            placeholder="Enter category"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Price -->
+        <div>
+          <label
+            for="price"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Price</label
+          >
+          <input
+            type="number"
+            id="price"
+            placeholder="Enter price"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Source -->
+        <div>
+          <label
+            for="source"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Source</label
+          >
+          <input
+            type="text"
+            id="source"
+            placeholder="Enter source"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <div id="buttonDiv">
+          <button
+            id="submitButton"
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-all duration-200"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+
+      <!-- Success Message -->
+      <div id="result" class="text-green-600 text-center font-medium hidden">
+        Entry added successfully!
+      </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

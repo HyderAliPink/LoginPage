@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/890/890132.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" type="module"></script>
+    <script src="sendverification.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Authentication App</title>
+  </head>
+
+  <body
+    class="h-screen flex items-center justify-center"
+    style="
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <div class="w-full max-w-xs text-center">
+      <div class="flex flex-col items-center mb-6">
+        <div
+          id="profileImageWrapper"
+          class="w-28 h-28 rounded-full overflow-hidden border-4 border-blue-500 shadow-md"
+        >
+          <img
+            id="profileImage"
+            src=""
+            alt="Profile"
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+
+      <h1 class="text-2xl font-bold mb-6 text-white" id="greetingText"></h1>
+
+      <div class="flex flex-col gap-4">
+        <button class="verifyBtn py-2 rounded" id="updatedProfile">
+          Update Profle
+        </button>
+
+        <button class="verifyBtn py-2 rounded" id="verify">verify Email</button>
+
+        <button id="logout" class="verifyBtn py-2 rounded">Logout</button>
+        <button id="delete-account" class="verifyBtn py-2 rounded">
+          Delete Current User
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
